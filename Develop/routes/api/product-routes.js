@@ -32,12 +32,12 @@ router.get("/:id", async (req, res) => {
       },
     ],
   });
-  if (!category) {
+  if (!product) {
     res.status(404).json({
       message: `No product matches this id`,
     });
   } else {
-    res.status(200).json(category);
+    res.status(200).json(product);
   }
 });
 
@@ -127,7 +127,6 @@ router.delete("/:id", async (req, res) => {
       res.status(404).json({
         message: `No product matches this id`
       });
-      return;
     }
     res.status(200).json(product);
   } catch (err) {
