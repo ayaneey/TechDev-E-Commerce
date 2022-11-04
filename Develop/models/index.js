@@ -3,7 +3,7 @@ const Product = require("./Product");
 const Category = require("./Category");
 const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
-const seedProductTags = require("../seeds/product-tag-seeds");
+// const seedProductTags = require("../seeds/product-tag-seeds");
 
 // Products belongsTo Category
 Product.belongsTo(Category, { foreignKey: "category_id" });

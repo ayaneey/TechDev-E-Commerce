@@ -33,4 +33,4 @@ ProductTag.init(
   }
 );
 
-module.exports = ProductTag;
+exports.ProductTag = ProductTag;
