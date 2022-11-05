@@ -2,7 +2,7 @@
 const { Model, DataTypes } = require("sequelize");
 // import our database connection from config.js
 const sequelize = require("../config/connection");
-
+const Category = require("./Category");
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
 
@@ -37,8 +37,10 @@ Product.init(
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: "categories",
-      referenceKey: "id",
+      references: {
+        model: Category,
+        key: 'id'
+      }
     },
   },
   {
