@@ -6,7 +6,7 @@
 
 - [Description](#Description)
 - [Technology](#Technology)
-- [DeployedApp](#Deployed App)
+- [App](#App)
 - [WalkThrough](#WalkThrough)
 - [Contribution](#Contribution)
 - [License](#License)
